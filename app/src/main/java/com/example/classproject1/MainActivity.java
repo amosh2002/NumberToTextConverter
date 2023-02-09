@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         public void afterTextChanged(Editable editable) {
             // check Fields For Empty Values
             checkFieldsForProhibitedValues();
+            // extend the Input Field's char length, if the number is negative
             extendTheFieldTo10CharsIfNegative();
         }
     };
